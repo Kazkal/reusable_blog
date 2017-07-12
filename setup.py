@@ -8,14 +8,14 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='reusable-blog-app',
+    name='reusable_blog_app',
     version='1.0.0',
     packages=['reusable_blog'],
     include_package_data=True,
     license='BSD License',  # example license
     description='A simple Django app to create blogs',
     long_description=README,
-    url='http://www.example.com/',
+    url='www.github.com/Kazkal/',
     author='Kashmir Kalirai',
     author_email='Kashmirk67@gmail.com',
     classifiers=[
@@ -30,7 +30,7 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires=[
-        'Pillow',
+        'Pillow==2.9.0',
         'django_forms_bootstrap',
         'django-disqus',
     ],
